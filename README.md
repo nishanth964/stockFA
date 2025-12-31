@@ -35,7 +35,7 @@ It provides structured research material instead of forcing conclusions, allowin
 - Flask
 - Docker
 - Fly.io (deployment)
-- Gemini API (AI chatbot)
+- Gemini API
 - IndianAPI (stock information)
 
 ### Performance
