@@ -9,14 +9,6 @@
 </template>
 
 <style scoped>
-    .hero-logo {
-        display: flex;
-        flex-direction: column; 
-        align-items: center;    
-        justify-content: center;
-        padding: 40px 20px;
-        text-align: center;
-    }
   .logo {
         width: 100%;      
         max-width: 600px; 
@@ -25,4 +17,14 @@
         filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.5));
         margin-top: 20px;      
     }
+
+  .hero-logo {
+   position: fixed;
+  top: -170px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: 600px;
+  max-width: 90vw;
+}
 </style>

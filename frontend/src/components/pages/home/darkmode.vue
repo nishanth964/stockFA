@@ -3,237 +3,128 @@
 </script>
 
 <template>
-  <label for="theme" class="theme">
-  	<span class="theme__toggle-wrap">
-  		<input id="theme" class="theme__toggle" type="checkbox" role="switch" name="theme" value="dark">
-  		<span class="theme__fill"></span>
-  		<span class="theme__icon">
-  			<span class="theme__icon-part"></span>
-  			<span class="theme__icon-part"></span>
-  			<span class="theme__icon-part"></span>
-  			<span class="theme__icon-part"></span>
-  			<span class="theme__icon-part"></span>
-  			<span class="theme__icon-part"></span>
-  			<span class="theme__icon-part"></span>
-  			<span class="theme__icon-part"></span>
-  			<span class="theme__icon-part"></span>
-  		</span>
-  	</span>
-  </label>
+  <div class="my-body">
+    <div class="darkThemeBtn">
+      <input id="darkmode-toggle" type="checkbox">
+      <label for="darkmode-toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="sun">
+          <g transform="translate(0 512) scale(.1 -.1)">
+            <path d="m2513 5105c-59-25-63-46-63-320 
+            0-266 4-288 54-315 33-17 79-17 112 0 50 27 54 49 54 315 0 275-4 295-65 321-42 17-51 
+            17-92-1z"></path>
+            <path d="m754 4366c-28-28-34-41-34-77 0-42 3-45 188-231l187-188h47c39 
+            0 52 5 77 31 26 25 31 38 31 77v47l-188 187c-186 185-189 188-231 188-36 0-49-6-77-34z"></path>
+          <path d="m4058 4212-188-187v-47c0-39 5-52 31-77 25-26 38-31 77-31h46l188 188c186 186 188 188 188 231 
+          0 36-6 49-34 77s-41 34-77 34c-42 0-45-3-231-188z"></path><path d="m2440 
+          4224c-453-50-760-192-1056-488-264-264-419-570-475-936-17-109-17-371 0-480 
+          56-366 211-672 475-936s570-419 936-475c109-17 371-17 480 0 366 56 672 211 936 475 
+          225 225 358 455 438 758 38 143 50 249 50 418 0 219-30 388-104 590-137 372-450 719-813 
+          901-143 72-315 128-474 154-89 15-329 26-393 19zm335-235c305-46 582-186 805-409 567-567
+           567-1473 0-2040s-1473-567-2040 0-567 1473 0 2040c328 328 777 476 1235 409z"></path>
+           <path d="m54 2651c-20-12-37-34-44-55-16-49 2-101 44-127 28-17 52-19 279-19 268 0 289 4 317 54 
+           17 33 17 79 0 112-28 50-49 54-317 54-227 0-251-2-279-19z"></path><path d="m4512 2657c-73-41-73-155 
+           0-193 21-11 81-14 275-14 227 0 251 2 279 19 42 26 60 78 44 127-7 21-24 43-44 55-28 17-52 19-281 
+           19-181-1-256-4-273-13z"></path>
+           <path d="m908 1062c-185-186-188-189-188-231 0-36 6-49 34-77s41-34 77-34c43 
+           0 45 2 231 188l188 188v46c0 39-5 52-31 77-25 26-38 31-77 31h-47l-187-188z"></path>
+           <path d="m3901 1219c-26-25-31-38-31-77v-47l188-187c186-185 189-188 231-188 36 0 49 6 77 
+           34s34 41 34 77c0 43-2 45-188 231l-188 188h-46c-39 0-52-5-77-31z"></path>
+           <path d="m2540 663c-87-28-90-37-90-330 0-227 2-251 19-279 40-66 142-66 182 0 17 
+           28 19 52 19 279 0 266-4 291-52 314-32 16-60 22-78 16z"></path></g>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="moon">
+          <g transform="translate(0 512) scale(.1 -.1)">
+            <path d="m2090 5105c-248-51-443-118-659-226-514-256-909-652-1161-1163-94-191-139-311-185-490-127-500-110-999 
+            51-1468 133-389 331-706 624-998 403-404 875-642 1460-736 147-24 529-24 693 0 539 78 981 283 1390 644 362 319 
+            647 793 766 1270 46 186 56 256 42 299-22 71-80 116-151 117-73 1-104-19-181-116-307-390-733-627-1233-689-119-14-385-7-501 
+            15-582 106-1066 469-1321 991-120 246-171 452-181 731-21 586 230 1126 695 1493 96 75 117 107 117 177 0 85-67 155-153 
+            160-26 1-76-3-112-11zm110-149c0-2-26-23-57-47-81-60-254-230-325-318-213-264-353-573-415-916-22-126-25-508-5-625 
+            62-346 195-651 395-910 72-93 228-250 327-329 266-213 571-349 930-413 117-20 499-17 625 5 343 62 652 202 916 415 88 
+            71 258 244 318 325 24 32 46 56 48 54s-8-60-23-128c-127-606-501-1155-1027-1505-780-521-1798-535-2602-36-295 183-594 
+            482-777 777-335 539-445 1180-308 1795 138 621 515 1158 1060 1511 136 88 374 201 530 253 148 49 390 106 390 92z"></path>
+          </g>
+        </svg>
+      </label>
+      <span class="fake-body"></span>
+    </div>
+  </div>
 </template>
 
 <style scoped>
-    /* Default */
-  .theme {
+  .darkThemeBtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    text-decoration: none;
+    width: fit-content;    
     display: flex;
-    -webkit-tap-highlight-color: transparent;
-    width: fit-content;
-    align-items: center;
+    align-items: center;  
     cursor: pointer;
     gap: 0.5rem;
-    position: fixed;
-    top: 6px;
-    right: 2px;  
-    z-index: 9999;
+    border: none;
   }
 
-  .theme__fill,
-  .theme__icon {
-    transition: 0.3s;
+  .darkThemeBtn * {
+    transition: all 0.3s;
   }
 
-  .theme__fill {
-    background-color: var(--bg);
-    display: block;
-    mix-blend-mode: difference;
-    position: fixed;
-    inset: 0;
-    height: 100%;
-    transform: translateX(-100%);
+  .darkThemeBtn input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
   }
 
-  .theme__icon,
-  .theme__toggle {
-    z-index: 1;
-  }
-
-  .theme__icon,
-  .theme__icon-part {
-    position: absolute;
-  }
-
-  .theme__icon {
-    display: block;
-    top: 0.5em;
-    left: 0.5em;
-    width: 1.5em;
-    height: 1.5em;
-  }
-
-  .theme__icon-part {
-    border-radius: 50%;
-    box-shadow: 0.4em -0.4em 0 0.5em hsl(0,0%,100%) inset;
-    top: calc(50% - 0.5em);
-    left: calc(50% - 0.5em);
-    width: 1em;
-    height: 1em;
-    transition: box-shadow var(--transDur) ease-in-out,
-  		opacity var(--transDur) ease-in-out,
-  		transform var(--transDur) ease-in-out;
-    transform: scale(0.5);
-  }
-
-  .theme__icon-part ~ .theme__icon-part {
-    background-color: hsl(0,0%,100%);
-    border-radius: 0.05em;
-    top: 50%;
-    left: calc(50% - 0.05em);
-    transform: rotate(0deg) translateY(0.5em);
-    transform-origin: 50% 0;
-    width: 0.1em;
-    height: 0.2em;
-  }
-
-  .theme__icon-part:nth-child(3) {
-    transform: rotate(45deg) translateY(0.45em);
-  }
-
-  .theme__icon-part:nth-child(4) {
-    transform: rotate(90deg) translateY(0.45em);
-  }
-
-  .theme__icon-part:nth-child(5) {
-    transform: rotate(135deg) translateY(0.45em);
-  }
-
-  .theme__icon-part:nth-child(6) {
-    transform: rotate(180deg) translateY(0.45em);
-  }
-
-  .theme__icon-part:nth-child(7) {
-    transform: rotate(225deg) translateY(0.45em);
-  }
-
-  .theme__icon-part:nth-child(8) {
-    transform: rotate(270deg) translateY(0.5em);
-  }
-
-  .theme__icon-part:nth-child(9) {
-    transform: rotate(315deg) translateY(0.5em);
-  }
-
-  .theme__label,
-  .theme__toggle,
-  .theme__toggle-wrap {
+  .darkThemeBtn label {
+    border: 1px solid #efefef;
+    background: rgba(239, 239, 239, 0.5);
+    border-radius: 10px;
+    height: 46px;
+    width: 46px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-  }
-
-  .theme__toggle,
-  .theme__toggle:before {
-    display: block;
-  }
-
-  .theme__toggle {
-    background-color: hsl(48,90%,85%);
-    border-radius: 25% / 50%;
-    box-shadow: 0 0 0 0.125em var(--primaryT);
-    padding: 0.25em;
-    width: 6em;
-    height: 3em;
-    -webkit-appearance: none;
     cursor: pointer;
-    appearance: none;
-    transition: background-color var(--transDur) ease-in-out,
-  		box-shadow 0.15s ease-in-out,
-  		transform var(--transDur) ease-in-out;
   }
 
-  .theme__toggle:before {
-    background-color: hsl(48,90%,55%);
-    border-radius: 50%;
-    content: "";
-    width: 2.5em;
-    height: 2.5em;
+  .darkThemeBtn label:active {
+    border-radius: 5px;
+  }
+
+  .darkThemeBtn label svg {
+    position: absolute;
+    width: 16px;
     transition: 0.3s;
+    z-index: 1;
+    fill: #000;
   }
 
-  .theme__toggle:focus {
-    box-shadow: 0 0 0 0.125em var(--primary);
-    outline: transparent;
+  .darkThemeBtn label svg.sun {
+    width: 20px;
+    opacity: 0;
+    fill: #fff;
   }
 
-  /* Checked */
-  .theme__toggle:checked {
-    background-color: hsl(198,90%,15%);
+  .darkThemeBtn label svg.moon {
+    opacity: 1;
   }
 
-  .theme__toggle:checked:before,
-  .theme__toggle:checked ~ .theme__icon {
-    transform: translateX(3em);
+  .darkThemeBtn input:checked + label {
+    background: #4a6cf7;
   }
 
-  .theme__toggle:checked:before {
-    background-color: hsl(198,90%,55%);
+  .darkThemeBtn input:checked + label svg.sun {
+    opacity: 1;
   }
 
-  .theme__toggle:checked ~ .theme__fill {
-    transform: translateX(0);
-  }
-
-  .theme__toggle:checked ~ .theme__icon .theme__icon-part:nth-child(1) {
-    box-shadow: 0.2em -0.2em 0 0.2em hsl(0,0%,100%) inset;
-    transform: scale(1);
-    top: 0.2em;
-    left: -0.2em;
-  }
-
-  .theme__toggle:checked ~ .theme__icon .theme__icon-part ~ .theme__icon-part {
+  .darkThemeBtn input:checked + label svg.moon {
     opacity: 0;
   }
 
-  .theme__toggle:checked ~ .theme__icon .theme__icon-part:nth-child(2) {
-    transform: rotate(45deg) translateY(0.8em);
+  .darkThemeBtn input:checked ~ span {
+    background-color: #16174b;
   }
 
-  .theme__toggle:checked ~ .theme__icon .theme__icon-part:nth-child(3) {
-    transform: rotate(90deg) translateY(0.8em);
-  }
-
-  .theme__toggle:checked ~ .theme__icon .theme__icon-part:nth-child(4) {
-    transform: rotate(135deg) translateY(0.8em);
-  }
-
-  .theme__toggle:checked ~ .theme__icon .theme__icon-part:nth-child(5) {
-    transform: rotate(180deg) translateY(0.8em);
-  }
-
-  .theme__toggle:checked ~ .theme__icon .theme__icon-part:nth-child(6) {
-    transform: rotate(225deg) translateY(0.8em);
-  }
-
-  .theme__toggle:checked ~ .theme__icon .theme__icon-part:nth-child(7) {
-    transform: rotate(270deg) translateY(0.8em);
-  }
-
-  .theme__toggle:checked ~ .theme__icon .theme__icon-part:nth-child(8) {
-    transform: rotate(315deg) translateY(0.8em);
-  }
-
-  .theme__toggle:checked ~ .theme__icon .theme__icon-part:nth-child(9) {
-    transform: rotate(360deg) translateY(0.8em);
-  }
-
-  .theme__toggle-wrap {
-    margin: 0 0.75em;
-  }
-
-  @supports selector(:focus-visible) {
-    .theme__toggle:focus {
-      box-shadow: 0 0 0 0.125em var(--primaryT);
-    }
-
-    .theme__toggle:focus-visible {
-      box-shadow: 0 0 0 0.125em var(--primary);
-    }
-  }
 </style>

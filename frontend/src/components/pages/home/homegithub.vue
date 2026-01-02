@@ -39,6 +39,11 @@
 
 <style scoped>
    .btnGithub {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    
     text-decoration: none;
     width: fit-content;    
     display: flex;
@@ -69,6 +74,6 @@
       inset 0 0 0 1px rgba(252, 232, 3, 0.08);
     color: #fac805;
     transform: translate(0, -0.25rem);
-    background-color: rgba(0, 0, 0, o.5);
+    background-color: rgba(0, 0, 0, 0.5);
   }
 </style>
