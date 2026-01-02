@@ -44,10 +44,9 @@
     display: flex;
     align-items: center;  
     cursor: pointer;
-    display: flex;
     gap: 0.5rem;
     border: none;
-
+    
     transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
     border-radius: 100px;
     font-weight: 800;

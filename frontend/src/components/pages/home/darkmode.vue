@@ -26,8 +26,15 @@
     /* Default */
   .theme {
     display: flex;
-    align-items: center;
     -webkit-tap-highlight-color: transparent;
+    width: fit-content;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.5rem;
+    position: fixed;
+    top: 6px;
+    right: 2px;  
+    z-index: 9999;
   }
 
   .theme__fill,
@@ -134,6 +141,7 @@
     width: 6em;
     height: 3em;
     -webkit-appearance: none;
+    cursor: pointer;
     appearance: none;
     transition: background-color var(--transDur) ease-in-out,
   		box-shadow 0.15s ease-in-out,
