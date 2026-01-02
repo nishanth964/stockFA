@@ -6,7 +6,7 @@
   <div class="my-body">
     <div class="darkThemeBtn">
       <input id="darkmode-toggle" type="checkbox">
-      <label for="darkmode-toggle">
+      <label for="darkmode-toggle"> 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="sun">
           <g transform="translate(0 512) scale(.1 -.1)">
             <path d="m2513 5105c-59-25-63-46-63-320 
@@ -66,7 +66,7 @@
   }
 
   .darkThemeBtn * {
-    transition: all 0.3s;
+    transition: all 0.5s;
   }
 
   .darkThemeBtn input {
@@ -76,7 +76,7 @@
   }
 
   .darkThemeBtn label {
-    border: 1px solid #efefef;
+    border: 1px solid #ffff;
     background: rgba(239, 239, 239, 0.5);
     border-radius: 10px;
     height: 46px;
@@ -101,13 +101,13 @@
     fill: #000;
   }
 
-  .darkThemeBtn label svg.sun {
+  .darkThemeBtn label svg.moon {
     width: 20px;
     opacity: 0;
     fill: #fff;
   }
 
-  .darkThemeBtn label svg.moon {
+  .darkThemeBtn label svg.sun {
     opacity: 1;
   }
 
@@ -115,11 +115,11 @@
     background: #4a6cf7;
   }
 
-  .darkThemeBtn input:checked + label svg.sun {
+  .darkThemeBtn input:checked + label svg.moon {
     opacity: 1;
   }
 
-  .darkThemeBtn input:checked + label svg.moon {
+  .darkThemeBtn input:checked + label svg.sun {
     opacity: 0;
   }
 

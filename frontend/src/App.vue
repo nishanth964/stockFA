@@ -2,6 +2,7 @@
     import GithubButton from './components/pages/home/homegithub.vue';
     import darkmodeSwitch from './components/pages/home/darkmode.vue';
     import homepagelogo from './components/pages/home/homelogo.vue';
+    import searchbar from './components/pages/home/searchsection.vue'
 </script>
 
 <template>
@@ -9,6 +10,7 @@
         <GithubButton/>
         <darkmodeSwitch/>
         <homepagelogo/>
+        <searchbar/>
     </section>
 
     <section>
@@ -18,5 +20,5 @@
 </template>
 
 <style scoped>
-  
+   
 </style>
