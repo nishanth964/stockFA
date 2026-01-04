@@ -1,22 +1,15 @@
 <script setup>
-    import GithubButton from './components/pages/home/homegithub.vue';
-    import darkmodeSwitch from './components/pages/home/darkmode.vue';
-    import homepagelogo from './components/pages/home/homelogo.vue';
-    import searchbar from './components/pages/home/searchsection.vue'
+    import section1 from './components/pages/home/section1.vue';
+    import section2 from './components/pages/home/section2.vue';
 </script>
 
 <template>
     <section>
-        <GithubButton/>
-        <darkmodeSwitch/>
-        <homepagelogo/>
-        <searchbar/>
+        <section1/>
+        <section2/>
     </section>
 
-    <section>
-        
-
-    </section>
+   
 </template>
 
 <style scoped>
