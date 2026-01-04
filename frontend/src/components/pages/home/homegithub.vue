@@ -1,18 +1,8 @@
 <template>
-    <div>
-    <a 
-      href="https://github.com/nishanth964/stockFA" 
-      target="_blank" 
-      rel="noopener noreferrer" 
-      class="btnGithub"
-    >
-    <svg
-      width="16"
-      height="16"
-      viewBox="0 0 16 16"
-      fill="none">
-      <path
-        d="M7.99992 1.33331C7.12444 1.33331 6.25753 1.50575 5.4487 1.84078C4.63986 
+  <div>
+    <a href="https://github.com/nishanth964/stockFA" target="_blank" rel="noopener noreferrer" class="btnGithub">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M7.99992 1.33331C7.12444 1.33331 6.25753 1.50575 5.4487 1.84078C4.63986 
         2.17581 3.90493 2.66688 3.28587 3.28593C2.03563 4.53618 1.33325 6.23187 
         1.33325 7.99998C1.33325 10.9466 3.24659 13.4466 5.89325 14.3333C6.22659 
         14.3866 6.33325 14.18 6.33325 14C6.33325 13.8466 6.33325 13.4266 6.33325 
@@ -29,51 +19,50 @@
         13.0666 9.66659 13.7866 9.66659 14C9.66659 14.18 9.77325 14.3933 10.1133 
         14.3333C12.7599 13.44 14.6666 10.9466 14.6666 7.99998C14.6666 7.1245 14.4941 6.25759 
         14.1591 5.44876C13.8241 4.63992 13.333 3.90499 12.714 3.28593C12.0949 2.66688 11.36 
-        2.17581 10.5511 1.84078C9.7423 1.50575 8.8754 1.33331 7.99992 1.33331V1.33331Z"
-        fill="currentcolor"></path>
-    </svg>
-    <span>View on Github</span>
+        2.17581 10.5511 1.84078C9.7423 1.50575 8.8754 1.33331 7.99992 1.33331V1.33331Z" fill="currentcolor"></path>
+      </svg>
+      <span>View on Github</span>
     </a>
-</div>
+  </div>
 </template>
 
 <style scoped>
-   .btnGithub {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 1000;
-    
-    text-decoration: none;
-    width: fit-content;    
-    display: flex;
-    align-items: center;  
-    cursor: pointer;
-    gap: 0.5rem;
-    border: none;
-    
-    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-    border-radius: 100px;
-    font-weight: 800;
-    place-content: center;
+.btnGithub {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
 
-    padding: 0.75rem 1rem;
-    font-size: 0.825rem;
-    line-height: 1rem;
+  text-decoration: none;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 0.5rem;
+  border: none;
 
-    background-color: rgba(0, 0, 0, 0.4);
-    box-shadow:
-      inset 0 1px 0 0 rgba(255, 255, 255, 0.04),
-      inset 0 0 0 1px rgba(255, 255, 255, 0.04);
-    color: #ffffff;
-  }
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border-radius: 100px;
+  font-weight: 800;
+  place-content: center;
 
-  .btnGithub:hover {
-    box-shadow:
-      inset 0 1px 0 0 rgba(255, 255, 255, 0.08),
-      inset 0 0 0 1px rgba(252, 232, 3, 0.08);
-    color: #fac805;
-    transform: translate(0, -0.25rem);
-    background-color: rgba(0, 0, 0, 0.5);
-  }
+  padding: 0.75rem 1rem;
+  font-size: 0.825rem;
+  line-height: 1rem;
+
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.04),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+  color: #ffffff;
+}
+
+.btnGithub:hover {
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.08),
+    inset 0 0 0 1px rgba(252, 232, 3, 0.08);
+  color: #fac805;
+  transform: translate(0, -0.25rem);
+  background-color: rgba(0, 0, 0, 0.5);
+}
 </style>
