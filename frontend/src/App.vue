@@ -8,8 +8,6 @@
         <section1/>
         <section2/>
     </section>
-
-   
 </template>
 
 <style scoped>
