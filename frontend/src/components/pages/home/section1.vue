@@ -1,7 +1,11 @@
+<script>
+
+</script>
+
 <template>
     <section>
-        <!-- Header with Logo -->
-        <header class="sticky-header">
+        <!--Logo -->
+        <header id="header" class="sticky-header">
             <div class="logo-container">
                 <img src="/homepagelogo.png" alt="STOCKFA Logo" class="logo" />
             </div>
@@ -61,49 +65,26 @@
                 </svg>
             </label>
         </div>
-
-        <!-- Demo Content for Scrolling -->
-        <div class="content">
-            <div class="spacer"></div>
-            <h1>Scroll down to see the logo shrink!</h1>
-            <p>The logo will smoothly shrink as you scroll down the page.</p>
-        </div>
     </section>
 </template>
 
 <style scoped>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-/* Sticky Header */
 .sticky-header {
-    position: relative;
-    top: -200px;
-    left: 0;
-    right: 0;
-    z-index: 999;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 350px;
+    background: white;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 20px;
-    background: transparent;
-}
-
-.logo-container {
-    display: flex;
     justify-content: center;
-    align-items: center;
+    transition: height 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
 }
 
 .logo {
-    width: 100%;
-    height: auto;
-    image-rendering: smooth;
-    filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.6));
-    transition: all 0.4s ease;
+    height: 500px;
 }
 
 /* GitHub Button */
@@ -197,28 +178,5 @@
 
 .dark-theme-toggle input:checked~.content {
     background-color: #16174b;
-}
-
-/* Content */
-.content {
-    padding: 20px;
-    min-height: 200vh;
-    transition: background-color 0.5s;
-}
-
-.spacer {
-    height: 250px;
-}
-
-.content h1 {
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.content p {
-    font-size: 1.25rem;
-    text-align: center;
-    color: #666;
 }
 </style>
