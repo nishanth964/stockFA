@@ -74,17 +74,17 @@
     position: sticky;
     top: 0;
     width: 100%;
-    height: 350px;
+    height: 300px;
     background: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: height 0.3s ease, box-shadow 0.3s ease;
     z-index: 1000;
 }
 
 .logo {
     height: 500px;
+    filter: drop-shadow(0 5px 4px rgba(0, 0, 0, 0.5));
 }
 
 /* GitHub Button */
