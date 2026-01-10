@@ -1,13 +1,9 @@
 <script setup>
-    import section1 from './components/pages/home/section1.vue';
-    import section2 from './components/pages/home/section2.vue';
+    import Home from './assets/pages/home.vue';
 </script>
 
 <template>
-    <section>
-        <section1/>
-        <section2/>
-    </section>
+    <home/>
 </template>
 
 <style scoped>
